@@ -1,0 +1,19 @@
+<!--@subject Autorização: Estado de {{var name}} mudou @-->
+<!--@vars
+{"htmlescape var=$userName":"User name",
+"var $applicationName":"Application name",
+"var $status":"Token new status"}
+@-->
+<div class="header"></div><div class="inline"></div>
+
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>{{block type="cms/block" block_id="email_template_say_hello"}} {{htmlescape var=$userName}}</h1>
+            <p>Sua aprovação a <b>{{htmlescape var=$applicationName}}</b> foi modificado para <b>{{htmlescape var=$status}}</b> pela equipa de gestão.</p>
+        </td>
+    </tr>
+</table>
+
+<div class="footer"></div>

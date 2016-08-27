@@ -1,0 +1,53 @@
+<script>
+$(document).ready(function() {
+    // Doležitý script aby sa kod na skrytie emailov načítal až po tom čo je web celý načítaný.
+    $('.email_content').hide();
+    $('.initial_email').show();
+    $('.btn-group-sidebar button').click(function(){
+        var target = "#" + $(this).data("target");
+        $(".email_content").not(target).hide();
+        $(target).show();
+    });
+
+});
+</script>
+
+
+<div id="creditmemo_new" class="email_content"></div>                       
+<div id="creditmemo_new_guest" class="email_content"></div>      
+<div id="creditmemo_update" class="email_content"></div>
+<div id="creditmemo_update_guest" class="email_content"></div>                                    
+<div id="invoice_new" class="email_content"></div>                                          
+<div id="invoice_new_guest" class="email_content"></div>                                        
+<div id="invoice_update" class="email_content"></div>                                        
+<div id="invoice_update_guest" class="email_content"></div>                                      
+<div id="order_new" class="email_content"></div>                                             
+<div id="order_new_guest" class="email_content"></div>
+<div id="order_update" class="email_content"></div>                                     
+<div id="order_update_guest" class="email_content"></div>                                      
+<div id="shipment_new" class="email_content"></div>                                           
+<div id="shipment_new_guest" class="email_content"></div>                                      
+<div id="shipment_update" class="email_content"></div>                                        
+<div id="shipment_update_guest" class="email_content"></div>                                    
+<div id="account_new" class="email_content initial_email"></div>
+<div id="account_new_confirmation" class="email_content"></div>      
+<div id="account_new_confirmed" class="email_content"></div>                
+<div id="account_password_reset_confirmation" class="email_content"></div>                                          
+<div id="admin_password_new" class="email_content"></div>                                           
+<div id="admin_password_reset_confirmation" class="email_content"></div>                           
+<div id="contact_form" class="email_content"></div>             
+<div id="currency_update_warning" class="email_content"></div>          
+<div id="log_clean_warning" class="email_content"></div>           
+<div id="moneybookers_activateemail" class="email_content"></div>
+<div id="newsletter_subscr_confirm" class="email_content"></div>
+<div id="newsletter_subscr_success" class="email_content"></div>                             
+<div id="newsletter_unsub_success" class="email_content"></div>                      
+<div id="password_new" class="email_content"></div>                                  
+<div id="payment_failed" class="email_content"></div>                                        
+<div id="product_alert_cron_error" class="email_content"></div>                                 
+<div id="product_price_alert" class="email_content"></div>                                    
+<div id="product_share" class="email_content"></div>                                   
+<div id="product_stock_alert" class="email_content"></div>                             
+<div id="sitemap_generate_warning" class="email_content"></div>                           
+<div id="token" class="email_content"></div>                                   
+<div id="wishlist_share" class="email_content"></div>

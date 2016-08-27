@@ -1,0 +1,460 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html id="wysiwyg" xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      @-ms-viewport {
+            width: device-width;
+        }
+
+        #wysiwyg a:hover, #wysiwyg a:active,#wysiwyg a:visited {
+            color: {{eighttemplate.eight.font_link}};
+            text-decoration: underline;
+        }
+
+        table.footer td a:hover, table.footer td a:active, table.footer td a:visited {
+            text-decoration: underline;
+        }
+
+        table.header td a:hover, table.header td a:active, table.header td a:visited {
+            color: {{eighttemplate.eight.font_color}};
+            font-family: {{eighttemplate.eight.font_fontfamily}};
+            font-size: 14px;
+            line-height: 18px;
+            text-decoration: none;
+        }
+
+        table.header td.headerleft a:active, table.header td.headerleft a:hover, table.header td.headerleft a:visited,
+        table.header td.headerright a:active, table.header td.headerright a:hover, table.header td.headerright a:visited {
+            font-size: 1px;
+            line-height: 1px;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-device-width: 649px), only screen and (max-width: 649px) {
+            table[class="body"] center {
+                min-width: 444px !important;
+            }
+
+            table[class="body"] .maxwidth {
+                min-width: 444px !important;
+            }
+
+            table[class="body"] .container {
+                width: 444px !important;
+            }
+
+            table[class="body"] .maxwidth {
+                width: 444px !important;
+            }
+
+            table[class="body"] .row {
+                width: 100% !important;
+                display: block !important;
+            }
+
+            table[class="body"] .wrapper {
+                display: block !important;
+                min-width: 444px !important;
+            }
+
+            table[class="body"] .columns {
+                table-layout: fixed !important;
+                float: none !important;
+                width: 100% !important;
+                padding-right: 0px !important;
+                padding-left: 0px !important;
+                display: block !important;
+            }
+
+            table[class="body"] .wrapper.first .columns {
+                display: table !important;
+            }
+
+            table[class="body"] .expander {
+                width: 9999px !important;
+            }
+
+            table[class="body"] .hide-for-small {
+                display: none !important;
+                max-height: 0px !important;
+                font-size: 0 !important;
+            }
+
+            table[class="body"] .show-for-desktop {
+                display: none !important;
+                max-height: 0px !important;
+                font-size: 0 !important;
+            }
+
+            table[class="body"] .hide-for-small img {
+                width: 0px !important;
+                height: 0px !important;
+                float: none !important;
+            }
+
+            table[class="body"] .show-for-desktop img {
+                width: 0px !important;
+                height: 0px !important;
+                float: none !important;
+            }
+
+            table[class="body"] .show-for-small {
+                max-height: none !important;
+                font-size: inherit !important;
+                display: inherit !important;
+            }
+
+            table[class="body"] .hide-for-desktop {
+                max-height: none !important;
+                font-size: inherit !important;
+                display: inherit !important;
+            }
+
+            table[class="body"] .show-for-small img {
+                width: auto !important;
+                height: auto !important;
+                float: inherit !important;
+            }
+
+            table[class="body"] .hide-for-desktop img {
+                width: auto !important;
+                height: auto !important;
+                float: inherit !important;
+            }
+
+            table[class="body"] td.headerleft img {
+                width: {{eighttemplate.eight.image_logowidth}}px !important;
+                height: {{eighttemplate.eight.image_logoheight}}px !important;
+            }
+
+            table[class="body"] td.headerright img {
+                width: 250px !important;
+                height: 30px !important;
+            }
+            
+			table[class="body"] img.bodyimage {
+                width: 100% !important;
+            }
+        }
+
+        @media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+            table[class="body"] center {
+                min-width: 300px !important;
+            }
+
+            table[class="body"] .maxwidth {
+                min-width: 300px !important;
+            }
+
+            table[class="body"] .container {
+                width: 300px !important;
+            }
+
+            table[class="body"] .maxwidth {
+                width: 300px !important;
+            }
+
+            table[class="body"] .wrapper {
+                display: block !important;
+                min-width: 300px !important;
+            }
+
+            table[class="body"] table.footer td.footerleft {
+                width: 200px !important;
+                display: inline !important;
+                float: left !important;
+                padding-left: 0px !important;
+            }
+
+                table[class="body"] table.footer td.footerleft img {
+                    width: 200px !important;
+                }
+
+            table[class="body"] table.footer td.footerright {
+                display: inline !important;
+                float: left !important;
+            }
+
+            table[class="body"] td.headerleft {
+                display: inline !important;
+                float: left !important;
+                width: 100% !important;
+            }
+
+            table[class="body"] td.headerright {
+                display: inline !important;
+                float: left !important;
+                padding-top: 5px !important;
+                padding-bottom: 5px !important;
+                width: 100% !important;
+            }
+
+            table[class="body"] td.headerleft img {
+                width: {{eighttemplate.eight.image_logowidth}}px !important;
+                height: {{eighttemplate.eight.image_logoheight}}px !important;
+            }
+
+            table[class="body"] td.headerright img {
+                width: 250px !important;
+                height: 30px !important;
+            }
+            
+			table[class="body"] img.bodyimage {
+                width: 100% !important;
+            }
+        }
+
+        @media only screen and (max-device-width: 300px), only screen and (max-width: 300px) {
+            table[class="body"] center {
+                min-width: 150px !important;
+            }
+
+            table[class="body"] .maxwidth {
+                min-width: 150px !important;
+            }
+
+            table[class="body"] .wrapper {
+                display: block !important;
+                min-width: 150px !important;
+            }
+
+            table[class="body"] .container {
+                width: 99% !important;
+            }
+
+            table[class="body"] .maxwidth {
+                width: 95% !important;
+            }
+
+            table[class="body"] td.headerleft {
+                width: 100% !important;
+                display: inline !important;
+                float: left !important;
+            }
+
+            table[class="body"] td.headerright {
+                width:100% !important;
+                display: inline !important;
+                float: left !important;
+                padding-left: 0px !important;
+            }
+            
+            table[class="body"] td.headerleft img {
+                width: 75px !important;
+                height: 18px !important;
+            }
+
+            table[class="body"] td.headerright img {
+                width: 150px !important;
+                height: 24px !important;
+            }
+            
+            table[class="body"] img.bodyimage {
+                width: 95% !important;
+            }	
+          }
+    </style>
+  </head>
+  
+  <!-- @separator -->
+  <body style="width: 100% !important; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; -moz-text-size-adjust: none; text-size-adjust: none; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; text-align: left; line-height: 16px; font-size: 12px; background: {{eighttemplate.eight.color_bgcolor}}; margin: 0; padding: 0;"
+  bgcolor="{{eighttemplate.eight.color_bgcolor}}">
+    
+    <table class="body" style="border-spacing: 0; border-collapse: collapse; height: 100%; width: 100%; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; text-align: left; line-height: 16px; font-size: 12px; background: {{eighttemplate.eight.color_bgcolor}}; margin: 0; padding: 0;"
+    border="0" cellpadding="0" cellspacing="0" bgcolor="{{eighttemplate.eight.color_bgcolor}}">
+      <tr>
+        <td class="center" align="center" valign="top" style="border-collapse: collapse !important; vertical-align: top; text-align: center; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 16px; font-size: 12px; margin: 0; padding: 0;">
+          <center style="width: 100%; min-width: 650px;">
+            <!-- Email content -->
+            <table class="container" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; width: 650px; text-align: inherit;">
+              <tr>
+                <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 16px; font-size: 12px; margin: 0; padding: 0;" align="left" valign="top">
+                  <table class="row" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; width: 100%; position: relative; display: block;">
+                    <tr>
+                      <td class="wrapper" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 16px; font-size: 12px; margin: 0; padding: 0px 20px;"
+                      align="left" valign="top">
+                        <table class="twelve columns header" border="0" cellpadding="0" cellspacing="0"
+                        style="background-color: {{eighttemplate.eight.color_bgcolor}}; border-spacing: 0; border-collapse: collapse; width: 610px; color: {{eighttemplate.eight.font_color}}; font-family:{{eighttemplate.eight.font_fontfamily}}; font-size: 14px; line-height: 18px; text-decoration: none;">
+                          <tr>
+                            <td class="tracker" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 14px; font-size: 12px; text-decoration: none; margin: 0; padding: 10px 0px 0px;"
+                            align="left" valign="top">Vix idque liberavisse te, illud affert quo ex, pri consulatu definitiones id.</td>
+                          </tr>
+                          <tr>
+                            <td class="hr" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 1px; font-size: 1px; text-decoration: none; margin: 0; padding: 0px;"
+                            align="left" valign="top">
+                              <hr style="color: {{eighttemplate.eight.color_border}}; height: 1px; background: {{eighttemplate.eight.color_border}}; border: none;" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="spacer" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 1px; font-size: 1px; text-decoration: none; margin: 0; padding: 0px;"
+                            align="left" valign="top">
+                              <img width="1" height="5" src="https://s3-us-west-2.amazonaws.com/wysiwyg.email/templates/images/8/spacer.gif"
+                              border="0" style="display: block; text-decoration: none; float: left; clear: both;"
+                               align="left" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 18px; font-size: 14px; text-decoration: none; margin: 0; padding: 0px;"
+                            align="left" valign="top">
+                              <table cellpadding="0" cellspacing="0" border="0" class="maxwidth" style="border-spacing: 0; border-collapse: collapse; width: 610px;">
+                                <tr>
+                                  <td class="headerleft" align="left" style="vertical-align: top; text-align: left; border-collapse: collapse !important; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 1px; font-size: 1px; text-decoration: none; margin: 0; padding: 0px 20px 0px 0px;"
+                                  valign="top">
+                                    <a href="http://yoururl" style="color: {{eighttemplate.eight.font_color}}; text-decoration: none; font-family: {{eighttemplate.eight.font_fontfamily}}; font-size: 1px; line-height: 1px;">
+                                      <img class="resize bodyimage" src="{{eighttemplate.eight.image_logourl}}" align="left" style="text-decoration: none; float: left; clear: both; display: block; -ms-interpolation-mode: bicubic; border: none;" />
+                                    </a>
+                                  </td>
+                                  <td class="headerright" align="right" style="vertical-align: top; text-align: right; border-collapse: collapse !important; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 1px; font-size: 1px; text-decoration: none; margin: 0; padding: 0px;"
+                                  valign="top">
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="spacer" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 1px; font-size: 1px; text-decoration: none; margin: 0; padding: 0px;"
+                            align="left" valign="top">
+                              <img width="1" height="2" src="https://s3-us-west-2.amazonaws.com/wysiwyg.email/templates/images/8/spacer.gif"
+                              border="0" style="display: block; text-decoration: none; float: left; clear: both;" align="left" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fourteen" style="text-align: right; border-collapse: collapse !important; vertical-align: top; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 18px; font-size: 14px; text-decoration: none; margin: 0; padding: 0px;"
+                            align="right" valign="top">
+                              <a href="http://yoururl" style="color: {{eighttemplate.eight.font_color}}; text-decoration: none; font-family: {{eighttemplate.eight.font_fontfamily}}; font-size: 14px; line-height: 18px;">WOMEN</a> |
+                              <a href="http://yoururl"
+                              style="color: {{eighttemplate.eight.font_color}}; text-decoration: none; font-family: {{eighttemplate.eight.font_fontfamily}}; font-size: 14px; line-height: 18px;">MEN</a> |
+                              <a href="http://yoururl"
+                              style="color: {{eighttemplate.eight.font_color}}; text-decoration: none; font-family: {{eighttemplate.eight.font_fontfamily}}; font-size: 14px; line-height: 18px;">BABY & KIDS</a> |
+                              <a href="http://yoururl"
+                              style="color: {{eighttemplate.eight.font_color}}; text-decoration: none; font-family: {{eighttemplate.eight.font_fontfamily}}; font-size: 14px; line-height: 18px;">HOME</a> | 
+                              <a href="http://yoururl" style="color: {{eighttemplate.eight.font_color}}; text-decoration: none; font-family: {{eighttemplate.eight.font_fontfamily}}; font-size: 14px; line-height: 18px;">GIFTS</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="spacer" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 1px; font-size: 1px; text-decoration: none; margin: 0; padding: 0px;"
+                            align="left" valign="top">
+                              <img width="1" height="5" src="https://s3-us-west-2.amazonaws.com/wysiwyg.email/templates/images/8/spacer.gif" border="0" style="display: block; text-decoration: none; float: left; clear: both;" align="left" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="hr" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 1px; font-size: 1px; text-decoration: none; margin: 0; padding: 0px;"
+                            align="left" valign="top">
+                              <hr style="color: {{eighttemplate.eight.color_border}}; height: 1px; background: {{eighttemplate.eight.color_border}}; border: none;" />
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="spacer" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 1px; font-size: 1px; margin: 0; padding: 0;"
+                      align="left" valign="top">
+                        <img width="1" height="10" src="https://s3-us-west-2.amazonaws.com/wysiwyg.email/templates/images/8/spacer.gif" border="0" style="display: block; text-decoration: none; float: left; clear: both;" align="left" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="wrapper" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 16px; font-size: 12px; margin: 0; padding: 0px 20px;"
+                      align="left" valign="top">
+                        <table class="twelve columns" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; width: 610px;">                 
+                          <tr>
+                            <td class="spacer" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 1px; font-size: 1px; margin: 0; padding: 0px;"
+                            align="left" valign="top">
+                              <img width="1" height="15" src="https://s3-us-west-2.amazonaws.com/wysiwyg.email/templates/images/8/spacer.gif"
+                              border="0" style="display: block; text-decoration: none; float: left; clear: both;" align="left" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="sixteen" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 22px; font-size: 16px; text-decoration: none; margin: 0; padding: 0px;"
+                            align="left" valign="top">
+                             
+
+<!-- @separator -->
+<div id="lang_container"></div>
+
+                              
+                              </td>
+                          </tr>
+                          
+                          <tr>
+                            <td class="hr" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 1px; font-size: 1px; margin: 0; padding: 0px;"
+                            align="left" valign="top">
+                              <hr style="color: {{eighttemplate.eight.color_border}}; height: 1px; background: {{eighttemplate.eight.color_border}}; border: none;" />
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="wrapper" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 16px; font-size: 12px; margin: 0; padding: 0px 20px;"
+                      align="left" valign="top">
+                        <table class="twelve columns footer" style="border-spacing: 0; border-collapse: collapse; width: 610px; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-size: 12px; line-height: 16px; background-color: {{eighttemplate.eight.color_bgcolor}};"
+                        border="0" cellpadding="0" cellspacing="0">
+
+                          <tr>
+                            <td colspan="2" class="spacer" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 16px; font-size: 12px; margin: 0; padding: 0px;"
+                            align="left" valign="top">
+                              <img width="1" height="10" src="https://s3-us-west-2.amazonaws.com/wysiwyg.email/templates/images/8/spacer.gif"
+                              border="0" style="text-decoration: none; float: left; clear: both; display: block;"
+                              align="left" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 16px; font-size: 12px; margin: 0; padding: 0px;"
+                            align="left" valign="top">Eam saepe omnium utroque ut, utinam constituam mea ea. Nec no case lorem exerci, an quod abhorreant scripserit vim, ei dolor ceteros sea.</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="spacer" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 16px; font-size: 12px; margin: 0; padding: 0px;"
+                            align="left" valign="top">
+                              <img width="1" height="10" src="https://s3-us-west-2.amazonaws.com/wysiwyg.email/templates/images/8/spacer.gif"
+                              border="0" style="text-decoration: none; float: left; clear: both; display: block;"
+                              align="left" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 16px; font-size: 12px; margin: 0; padding: 0px;"
+                            align="left" valign="top">Te tota natum petentium eum, lorem falli scripserit at mea alean
+                              <a href="http://yoururl"
+                              target="_blank" style="color: {{eighttemplate.eight.font_color}}; text-decoration: none;"><span style="text-decoration: none; color: {{eighttemplate.eight.font_link}}; font-family:{{eighttemplate.eight.font_fontfamily}}; font-size: 12px;">Elitr alienum</span>
+                              </a>.</td>
+                          </tr>
+                          
+                          <tr>
+                            <td colspan="2" class="spacer" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 16px; font-size: 12px; margin: 0; padding: 0px;"
+                            align="left" valign="top">
+                              <img width="1" height="20" src="https://s3-us-west-2.amazonaws.com/wysiwyg.email/templates/images/8/spacer.gif"
+                              border="0" style="text-decoration: none; float: left; clear: both; display: block;"
+                              align="left" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="addr footerleft" valign="bottom" align="left" style="text-align: left; vertical-align: bottom; border-collapse: collapse !important; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 18px; font-size: 14px; margin: 0; padding: 0px;">WYSIWYG.EMAIL
+                              <br>725 First Avenue<br>Sunnyvale, CA 94089 USA</td>
+                            <td class="footerright" valign="bottom" align="right"
+                            style="vertical-align: bottom; text-align: right; border-collapse: collapse !important; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 16px; font-size: 12px; margin: 0; padding: 0px;"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="spacer" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: {{eighttemplate.eight.font_color}}; font-family: {{eighttemplate.eight.font_fontfamily}}; font-weight: normal; line-height: 1px; font-size: 1px; margin: 0; padding: 0;"
+                      align="left" valign="top">
+                        <img width="1" height="20" src="https://s3-us-west-2.amazonaws.com/wysiwyg.email/templates/images/8/spacer.gif"
+                        border="0" style="display: block; text-decoration: none; float: left; clear: both;"
+                        align="left" />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </center>
+        </td>
+      </tr>
+    </table>
+  </body>
+
+</html>

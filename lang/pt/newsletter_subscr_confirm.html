@@ -1,0 +1,32 @@
+<!--@subject Confirmação Subscrição Newsletter  @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"htmlescape var=$customer.name":"Customer Name",
+"var subscriber.getConfirmationLink()":"Subscriber Confirmation Url"}
+@-->
+
+<!--@styles
+@-->
+
+<div class="header"></div><div class="inline"></div>
+
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>Obrigado por subscrever a nossa newsletter.</h1>
+            <p>Para isso acontecer, apenas tem que confirmar o pedido clicando no link abaixo:</p>
+            <table cellspacing="0" cellpadding="0" class="action-button" >
+                <tr>
+                    <td>
+                        <a href="{{var subscriber.getConfirmationLink()}}"><span>Confirme subscrição</span></a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<div class="footer"></div>

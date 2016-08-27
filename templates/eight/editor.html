@@ -1,0 +1,383 @@
+<ul class="site-menu">
+    <li class="site-menu-category">Edit</li>       
+
+    <li class="site-menu-item has-sub" ng-class="colors ? 'open hover' : 'closed'">
+        <a ng-click="colors = !colors">
+            <i class="site-menu-icon icon fa-tint" aria-hidden="true"></i>
+            <span class="site-menu-title">Color</span>
+            <span class="site-menu-arrow"></span>
+        </a>
+        <ul class="site-menu-sub">                    
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Background</label>
+                    <input colorpicker colorpicker-close-on-select colorpicker-parent="true" class="form-control" type="text" ng-model="eighteditor.eight.color_bgcolor" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Background color of emails</div>
+                </div>     
+            </li>
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Border</label>
+                    <input colorpicker colorpicker-close-on-select colorpicker-parent="true" class="form-control" type="text" ng-model="eighteditor.eight.color_border" name="border" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Color of borders</div>
+                </div>     
+            </li>
+        </ul>
+    </li>
+
+    <li class="site-menu-item has-sub" ng-class="image ? 'open hover' : 'closed'">
+        <a ng-click="image = !image">
+            <i class="site-menu-icon fa-picture-o" aria-hidden="true"></i>
+            <span class="site-menu-title">Image</span>
+            <span class="site-menu-arrow"></span>
+        </a>
+        <ul class="site-menu-sub">
+
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Logo</label>
+                    <input class="form-control" type="text" ng-model="eighteditor.eight.image_logourl" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">URL of your logo</div>
+                </div>     
+            </li>
+
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Width</label>
+                    <input class="form-control" type="text" ng-model="eighteditor.eight.image_logowidth" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Width of your logo in px</div>
+                </div>     
+            </li>
+
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Height</label>
+                    <input class="form-control" type="text" ng-model="eighteditor.eight.image_logoheight" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Height of your logo in px</div>
+                </div>     
+            </li>
+        </ul>
+    </li>    
+
+
+    <li class="site-menu-item has-sub" ng-class="font ? 'open hover' : 'closed'">
+        <a ng-click="font = !font">
+            <i class="site-menu-icon fa-font" aria-hidden="true"></i>
+            <span class="site-menu-title">Font</span>
+            <span class="site-menu-arrow"></span>
+        </a>
+
+        <ul class="site-menu-sub">
+           
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label for="select">Font family</label>
+                    <select class="form-control" id="select-font-family" ng-model="eighteditor.eight.font_fontfamily">
+                        <option value="Helvetica, Arial, sans-serif">Helvetica</option>                    
+                        <option value="Tahoma, Geneva, sans-serif">Tahoma</option>
+                        <option value="Trebuchet MS, Helvetica, sans-serif">Trebuchet MS</option>
+                        <option value="Verdana, Geneva, sans-serif">Verdana</option>
+                        <option value="Georgia, serif">Georgia</option>
+                        <option value="Times New Roman, Times, serif">Times New Roman</option>
+                        <option value="Courier New, Courier, monospace">Courier</option>
+                    </select>
+                </div>     
+            </li>
+            
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Font color</label>
+                    <input colorpicker colorpicker-close-on-select colorpicker-parent="true" class="form-control" type="text" ng-model="eighteditor.eight.font_color" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Font color of email content</div>
+                </div>     
+            </li>
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Link color</label>
+                    <input colorpicker colorpicker-close-on-select colorpicker-parent="true" class="form-control" type="text" ng-model="eighteditor.eight.font_link" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Color of links</div>
+                </div>     
+            </li>          
+        </ul>   
+    </li>
+    
+    <li class="site-menu-item has-sub" ng-class="content ? 'open hover' : 'closed'">
+        <a ng-click="content = !content">
+            <i class="site-menu-icon fa-file-text-o" aria-hidden="true"></i>
+            <span class="site-menu-title">Content</span>
+            <span class="site-menu-arrow"></span>
+        </a>
+
+        <ul class="site-menu-sub">
+            
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Paragraph size</label>
+                    <input class="form-control" type="text" ng-model="eighteditor.eight.content_paragraph" name="paragraph" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Font size in px</div>
+                </div>     
+            </li>
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Paragraph color</label>
+                    <input colorpicker colorpicker-close-on-select colorpicker-parent="true" class="form-control" type="text" ng-model="eighteditor.eight.content_color" name="paragraph-color" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Color of paragraph</div>
+                </div>     
+            </li>
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Link color</label>
+                    <input colorpicker colorpicker-close-on-select colorpicker-parent="true" class="form-control" type="text" ng-model="eighteditor.eight.content_link" name="content-link" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Link color in content</div>
+                </div>     
+            </li>
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Heading1 size</label>
+                    <input class="form-control" type="text" ng-model="eighteditor.eight.content_heading1" name="heading1" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Font size in px</div>
+                </div>     
+            </li>
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Heading1 color</label>
+                    <input colorpicker colorpicker-close-on-select colorpicker-parent="true" class="form-control" type="text" ng-model="eighteditor.eight.content_heading1color" name="heading1color" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Color of Heading 1</div>
+                </div>     
+            </li>
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Heading2 size</label>
+                    <input class="form-control" type="text" ng-model="eighteditor.eight.content_heading2" name="heading2" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Font size in px</div>
+                </div>     
+            </li>
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Heading2 color</label>
+                    <input colorpicker colorpicker-close-on-select colorpicker-parent="true" class="form-control" type="text" ng-model="eighteditor.eight.content_heading2color" name="heading2color" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Color of Heading 2</div>
+                </div>     
+            </li>
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Heading3 size</label>
+                    <input class="form-control" type="text" ng-model="eighteditor.eight.content_heading3" name="heading3" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Font size in px</div>
+                </div>     
+            </li>
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Heading3 color</label>
+                    <input colorpicker colorpicker-close-on-select colorpicker-parent="true" class="form-control" type="text" ng-model="eighteditor.eight.content_heading3color" name="heading3color" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Color of Heading 3</div>
+                </div>     
+            </li>
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Heading4 size</label>
+                    <input class="form-control" type="text" ng-model="eighteditor.eight.content_heading4" name="heading4" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Font size in px</div>
+                </div>     
+            </li>
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Heading5 size</label>
+                    <input class="form-control" type="text" ng-model="eighteditor.eight.content_heading5" name="heading5" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Font size in px</div>
+                </div>     
+            </li>
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <label>Heading6 size</label>
+                    <input class="form-control" type="text" ng-model="eighteditor.eight.content_heading6" name="heading6" />
+                    <i class="icon fa-pencil"></i>
+                    <div class="hint">Font size in px</div>
+                </div>     
+            </li>
+            
+            <li class="site-menu-item editor-input">
+                <div class="form-group form-material">
+                    <button id="apply-inline-style" class="btn btn-icon btn-block btn-primary btn-sm" type="button">Apply style at content</button>
+                </div>     
+            </li>  
+            
+        </ul>
+    </li>
+        
+</ul>
+
+<script>
+    $(document).ready(function(){  
+        $("#apply-inline-style").click(function(){  
+            var fontfamily = $( "#select-font-family option:selected" ).val();
+            var p = $('input[name="paragraph"]').val();
+            var pcolor = $('input[name="paragraph-color"]').val();
+            var link = $('input[name="content-link"]').val();
+            var h1 = $('input[name="heading1"]').val();
+            var h1color = $('input[name="heading1color"]').val();
+            var h2 = $('input[name="heading2"]').val();
+            var h2color = $('input[name="heading2color"]').val();
+            var h3 = $('input[name="heading3"]').val();
+            var h3color = $('input[name="heading3color"]').val();
+            var h4 = $('input[name="heading4"]').val();
+            var h5 = $('input[name="heading5"]').val();
+            var h6 = $('input[name="heading6"]').val();
+            
+            var border = $('input[name="border"]').val();
+            
+             $('#lang_container').find("a").css({
+                'font-family': fontfamily, 
+                'color': link,
+                'font-size': p + 'px'
+                });
+            $('#lang_container').find("p").css({
+                'font-family': fontfamily, 
+                'color': pcolor,
+                'font-size': p + 'px',
+                'margin-top': '0px',
+                'margin-bottom': '10px',
+                });
+            $('#lang_container').find("h1").css({
+                'font-family': fontfamily, 
+                'color': h1color,
+                'font-size': h1 + 'px',
+                'margin-top': '0px',
+                'margin-bottom': '20px',
+                
+                });
+            $('#lang_container').find("h2").css({
+                'font-family': fontfamily, 
+                'color': h2color,
+                'font-size': h2 + 'px',
+                'margin-top': '0px',
+                'margin-bottom': '20px',
+                
+                });
+            $('#lang_container').find("h3").css({
+                'font-family': fontfamily, 
+                'color': h3color,
+                'font-size': h3 + 'px',
+                'margin-top': '0px',
+                'margin-bottom': '20px',
+                'line-height': '1',
+                
+                });
+            $('#lang_container').find("h4").css({
+                'font-family': fontfamily, 
+                'color': pcolor,
+                'font-size': h4 + 'px',
+                'margin-top': '0px',
+                'margin-bottom': '20px',
+                });
+            $('#lang_container').find("h5").css({
+                'font-family': fontfamily, 
+                'color': pcolor,
+                'font-size': h5 + 'px',
+                'margin-top': '0px',
+                'margin-bottom': '20px',
+                });
+            $('#lang_container').find("h6").css({
+                'font-family': fontfamily, 
+                'color': pcolor,
+                'font-size': h6 + 'px',
+                'margin-top': '0px',
+                'margin-bottom': '20px',
+                });
+            
+            
+            // ------------ iné štýlovanie --------------
+            
+            $('#lang_container').find(".order-details").css({
+                'border-top': '1px' + 'solid' + border,
+                'padding-top': '50px',
+                'text-align': 'center',
+                });
+            $('#lang_container').find(".order-information").css({
+                'font-family': fontfamily,
+                'font-size': p + 'px',
+                'color': pcolor,
+                'font-weight': 300,
+                'text-align': 'left',
+                
+                });
+            $('#lang_container').find(".order-information").find("table").css({
+                'width': '100%',
+                'margin-top': '40px',
+                });
+            $('#lang_container').find(".message-container").css({
+                'font-family': fontfamily,
+                'font-size': p + 'px',
+                'color': pcolor,
+                'font-weight': 300,
+                });
+            $('#lang_container').find(".action-content").css({
+                'font-family': fontfamily,
+                'font-size': p + 'px',
+                'color': pcolor,
+                'font-weight': 300,
+                });
+            $('#lang_container').find(".address-details").css({
+                'width': '50%',
+                'text-align': 'left',
+                'font-family': fontfamily,
+                'font-size': p + 'px',
+                'color': pcolor,
+                'font-weight': 300,
+                'padding': '10px 20px 10px 0px',
+                'vertical-align': 'top',
+                });
+            $('#lang_container').find(".method-info").css({
+                'width': '50%',
+                'text-align': 'left',
+                'font-family': fontfamily,
+                'font-size': p + 'px',
+                'color': pcolor,
+                'font-weight': 300,
+                'padding': '10px 20px 10px 0px',
+                'vertical-align': 'top',
+                });
+            $('#lang_container').find("ul").css({
+
+                });
+            $('#lang_container').find("ul").find("li").css({
+                'font-family': fontfamily, 
+                'color': pcolor,
+                'font-size': p + 'px',
+                });
+            $('#lang_container').find(".email-heading").css({
+                'padding': '10px',
+                'vertical-align': 'top',
+                });
+            $('#lang_container').find(".store-info").css({
+                'padding': '10px 10px 10px 20px',
+                'vertical-align': 'top',
+                //'border-left': '1px solid' + border,
+                });
+            $('#lang_container').find(".highlighted-text").css({
+                'padding': '10px',
+                'vertical-align': 'top',
+                'border': '1px solid' + border,
+                'background': '#fafafa',
+                });
+        });
+    });
+</script>

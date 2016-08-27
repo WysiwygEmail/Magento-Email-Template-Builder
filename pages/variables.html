@@ -1,0 +1,244 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+            <h3 class="modal-title">Magento variables</h3>
+        </div>
+
+        <div class="modal-body">
+           <div class="panel-group panel-group-simple margin-bottom-0" id="exampleAccordion" aria-multiselectable="true" role="tablist">
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingOne" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseOne" aria-controls="exampleCollapseOne" aria-expanded="false">
+                        Base Unsecure URL
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseOne" aria-labelledby="exampleHeadingOne" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="web/unsecure/base_url"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingTwo" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseTwo" aria-controls="exampleCollapseTwo" aria-expanded="false">
+                        Base Secure URL
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseTwo" aria-labelledby="exampleHeadingTwo" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="web/secure/base_url"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingThree" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseThree" aria-controls="exampleCollapseThree" aria-expanded="false">
+                        General Contact Name
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseThree" aria-labelledby="exampleHeadingThree" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="trans_email/ident_general/name"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingFour" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseFour" aria-controls="exampleCollapseFour" aria-expanded="false">
+                        General Contact Email
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseFour" aria-labelledby="exampleHeadingFour" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="trans_email/ident_general/email"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingFive" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseFive" aria-controls="exampleCollapseFive" aria-expanded="false">
+                        Sales Representative Contact Name
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseFive" aria-labelledby="exampleHeadingFive" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="trans_email/ident_sales/name"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingSix" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseSix" aria-controls="exampleCollapseSix" aria-expanded="false">
+                        Sales Representative Contact Email
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseSix" aria-labelledby="exampleHeadingSix" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="trans_email/ident_sales/email"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingSeven" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseSeven" aria-controls="exampleCollapseSeven" aria-expanded="false">
+                        Custom1 Contact Name
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseSeven" aria-labelledby="exampleHeadingSeven" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="trans_email/ident_custom1/name"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingEight" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseEight" aria-controls="exampleCollapseEight" aria-expanded="false">
+                        Custom1 Contact Email
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseEight" aria-labelledby="exampleHeadingEight" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="trans_email/ident_custom1/email"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingNine" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseNine" aria-controls="exampleCollapseNine" aria-expanded="false">
+                        Custom2 Contact Name
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseNine" aria-labelledby="exampleHeadingNine" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="trans_email/ident_custom2/name"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingTen" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseTen" aria-controls="exampleCollapseTen" aria-expanded="false">
+                        Custom2 Contact Email
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseTen" aria-labelledby="exampleHeadingTen" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="trans_email/ident_custom2/email"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingEleven" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseEleven" aria-controls="exampleCollapseEleven" aria-expanded="false">
+                        Store Name
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseEleven" aria-labelledby="exampleHeadingEleven" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="general/store_information/name"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingTwelve" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseTwelve" aria-controls="exampleCollapseTwelve" aria-expanded="false">
+                        Store Phone Number
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseTwelve" aria-labelledby="exampleHeadingTwelve" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="general/store_information/phone"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingThreeten" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseThreeten" aria-controls="exampleCollapseThreeten" aria-expanded="false">
+                        Store Hours
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseThreeten" aria-labelledby="exampleHeadingThreeten" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="general/store_information/hours"}}
+                        </div>
+                      </div>
+                    </div>
+                                        <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingFourteen" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseFourteen" aria-controls="exampleCollapseFourteen" aria-expanded="false">
+                        Country
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseFourteen" aria-labelledby="exampleHeadingFourteen" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                         {{config path="general/store_information/country_id"}}
+                        </div>
+                      </div>
+                    </div>
+                                        <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingFiveteen" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseFiveteen" aria-controls="exampleCollapseFiveteen" aria-expanded="false">
+                        Region/State
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseFiveteen" aria-labelledby="exampleHeadingFiveteen" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="general/store_information/region_id"}}
+                        </div>
+                      </div>
+                    </div>
+                                        <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingSixteen" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseSixteen" aria-controls="exampleCollapseSixteen" aria-expanded="false">
+                        Zip/Postal Code
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseSixteen" aria-labelledby="exampleHeadingSixteen" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="general/store_information/postcode"}}
+                        </div>
+                      </div>
+                    </div>
+                                        <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingSeventeen" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseSeventeen" aria-controls="exampleCollapseSeventeen" aria-expanded="false">
+                        City
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseSeventeen" aria-labelledby="exampleHeadingSeventeen" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                         {{config path="general/store_information/city"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingEighten" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseEighten" aria-controls="exampleCollapseEighten" aria-expanded="false">
+                        Street Address 1
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseEighten" aria-labelledby="exampleHeadingEighten" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="general/store_information/street_line1"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" id="exampleHeadingNineteen" role="tab">
+                        <a class="panel-title collapsed" data-parent="#exampleAccordion" data-toggle="collapse" href="#exampleCollapseNineteen" aria-controls="exampleCollapseNineteen" aria-expanded="false">
+                        Street Address 2
+                      </a>
+                      </div>
+                      <div class="panel-collapse collapse" id="exampleCollapseNineteen" aria-labelledby="exampleHeadingNineteen" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                          {{config path="general/store_information/street_line2"}}
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+        </div>
+    </div>
+</div>

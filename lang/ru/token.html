@@ -1,0 +1,19 @@
+<!--@subject Здравствуйте, {{var name}} @-->
+<!--@vars
+{"htmlescape var=$userName":"User name",
+"var $applicationName":"Application name",
+"var $status":"Token new status"}
+@-->
+<div class="header"></div><div class="inline"></div>
+
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>Здравствуйте, {{htmlescape var=$userName}}</h1>
+            <p>Ваша авторизация для <b>{{htmlescape var=$applicationName}}</b> изменена на <b>{{htmlescape var=$status}}</b> администратором системы.</p>
+        </td>
+    </tr>
+</table>
+
+<div class="footer"></div>

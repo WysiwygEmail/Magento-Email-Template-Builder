@@ -1,0 +1,48 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+            <h3 class="modal-title">Instructions for Installing the Email Templates</h3>
+        </div>
+        <div id="modal-body" class="modal-body">
+            <h4>for Magento 1.9.x.x</h4>
+            <ol>
+                <li>Unpack the zip file</li>               
+                <li>Copy the email folder (from Magento1) to
+                    <pre>app/locale/lang_CODE/template/email</pre>
+                </li>
+                <li>Copy the file "email-inline.css" from css folder to
+                    <pre>skin/frontend/YOURPACKAGE/YOURTHEME/css/email-inline.css</pre>
+                </li>
+                <li>Make sure to flush all cache</li>
+                <li>Done!</li>
+            </ol>
+            <br/>
+            <h4>for Magento 2.x</h4>
+            <ol>
+                <li>Unpack the zip file</li>               
+                <li>Copy the "Magento_Email" folder (from Magento2) to
+                    <pre>app/design/frontend/YOURPACKAGE/YOURTHEME/</pre>
+                </li>
+                <li>Make sure to flush all cache</li>
+                <li>Done!</li>
+            </ol>
+        </div>
+        <div class="modal-footer">
+            <!-- <button class="btn btn-primary" onclick="printContent()">Print</button> -->
+            <button id="print" class="btn btn-primary" onclick="printContent('modal-body');" >Print</button>
+            <a class="btn btn-sm btn-white" data-dismiss="modal" href="javascript:void(0)">Cancel</a>
+        </div>
+        <script>
+            function printContent(el){
+                var restorepage = $('body').html();
+                var printcontent = $('#' + el).clone();
+                $('body').empty().html(printcontent);
+                window.print();
+                $('body').html(restorepage);
+            }
+        </script>
+    </div>
+</div>

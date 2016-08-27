@@ -1,0 +1,19 @@
+<!--@subject Alerta - Alteração preço produto @-->
+<!--@vars
+{"var customerName":"Customer Name",
+"var alertGrid":"Alert Data Grid"}
+@-->
+<div class="header"></div><div class="inline"></div>
+
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>{{block type="cms/block" block_id="email_template_say_hello"}} {{var customerName}},</h1>
+
+            {{var alertGrid}}
+        </td>
+    </tr>
+</table>
+
+<div class="footer"></div>

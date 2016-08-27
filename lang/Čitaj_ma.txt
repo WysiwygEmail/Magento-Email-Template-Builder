@@ -1,0 +1,19 @@
+
+
+Pozor:
+
+z originálnych emailov som vymazal:
+_____________________________________
+<!--@styles @-->
+
+a tak isto aj: 
+
+{{"inline"}} Aby nenaèítavalo štýly
+__________________________________________________________
+
+{{template config_path="design/email/header"}}
+{{template config_path="design/email/footer"}}
+
+Som nahradil id="header"
+
+v downloade sa to nahradí.....

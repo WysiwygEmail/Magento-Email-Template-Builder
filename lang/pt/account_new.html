@@ -1,0 +1,38 @@
+<!--@subject Bem-vindo, {{var customer.name}}! @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"htmlescape var=$customer.name":"Customer Name",
+"store url=\"customer/account/\"":"Customer Account Url"}
+@-->
+
+<!--@styles
+@-->
+
+<div class="header"></div><div class="inline"></div>
+
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>{{block type="cms/block" block_id="email_template_say_hello"}} {{htmlescape var=$customer.name}}</h1>
+            <p>Bem-vindo a {{var store.getFrontendName()}}.</p>
+            <p>Para iniciar sessão enquanto visita a nossa loja <a href="{{store url="customer/account/"}}">Inicie Sessção</a> ou vá a <a href="{{store url="customer/account/"}}">Minha Conta</a> que está localizado no topo de cada página e insira o seu email e palavra-passe.</p>
+            <p>Assim que iniciar sessão será capaz de realizar as seguintes acções:</p>
+            <ul>
+                <li>Finalizar a encomenda mais rapidamente</li>
+                <li>Verificar o estado das suas encomendas</li>
+                <li>Visualizar Histórico Encomendas</li>
+                <li>Realizar Alterações à sua conta</li>
+                <li>Alterar a sua palavra-passe</li>
+                <li>Guardar endereços alternativos (para envios par amigos e familiares!)</li>
+            </ul>
+            <p>
+                {{block type="cms/block" block_id="email_template_contact"}}
+            </p>
+        </td>
+    </tr>
+</table>
+
+<div class="footer"></div>
