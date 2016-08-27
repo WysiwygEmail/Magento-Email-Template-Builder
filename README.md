@@ -1,6 +1,6 @@
 # Magento Email Template Builder
 
-<a href="http://magento.wysiwyg.email/">Magento Email Templates</a> Design Magento Email Templates like a PRO.
+Design <a href="http://magento.wysiwyg.email/">Magento Email Templates</a> like a PRO.
 
 # Overwiev
 
