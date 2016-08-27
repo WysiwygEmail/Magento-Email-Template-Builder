@@ -4,4 +4,4 @@
 
 # Overwiev
 
-This is an editor for editing email templates for magento ecommerce system. It is designed do design email templates for magento. Using the editor you can declaratively spcify fonts, colors, texts for your email templates. Only in few clicks.
+This is an editor for editing email templates for magento ecommerce system. It is designed as easy to use for email template editing. Using the editor you can declaratively specify fonts, colors, texts, images for your magento email templates. Only by few clicks.
